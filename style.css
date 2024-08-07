@@ -6,3 +6,143 @@
     padding: 0;
     font-family: "Roboto", sans-serif;
 }
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 77px;
+    border-bottom:1px solid rgb(214, 214, 214);
+}
+
+.logo-nav{
+    width: 243px;
+    padding-left:33px ;
+}
+.logo{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.single-navbar{
+    margin-left: 32px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.single-navbar > ul{
+    display: flex; 
+    align-items: center;
+    list-style: none;
+}
+.single-navbar > ul > li{
+    margin-right: 33px;
+}
+
+
+.single-navbar > ul > li > a{
+    text-decoration: none;
+    color: rgb(94, 92, 92);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing:.5px;
+}
+.single-navbar > ul > li > a:hover{
+    color: #B19648;
+}
+
+
+.single-navbar > ul > li > a > i{
+    font-size: 13px;
+   
+}
+ 
+
+.single-navbar{
+    width: 100%;
+    box-sizing: border-box;
+    padding-right:35px;
+}
+
+.log-btn{
+    padding: 10px 20px;
+    font-size: 17px;
+    
+}
+.log-btn{
+    background:none ;
+    border: none;
+    color: rgb(94, 92, 92);
+}
+.log-btn:hover{
+    color: #B19648;
+}
+
+.sign-btn{
+    padding: 10px 20px;
+    font-size: 17px;
+    background-color:#d5f1f7;
+    border-radius: 25px;
+    border:none;
+    transition: .5s;
+    margin-left: 20px;
+}
+
+.sign-btn:hover{
+    background-color: #DEE1E3;
+}
+
+
+/* How to use  drop-down-menu code start hare */
+
+.How-to-drop-down{
+    position: fixed;
+    margin-top: 30px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px 20px ;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 20px  10px #EDEDED;
+    transform: .5s;
+    visibility:hidden;
+    opacity:0;
+}
+
+ul li:hover .How-to-drop-down{
+    visibility: visible;
+    opacity:1;
+} 
+ 
+.How-to-drop-down > li{
+    margin: 35px 35px;
+    
+}
+
+.How-to-drop-down > li > a{
+    color:rgb(94, 92, 92);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.How-to-drop-down > li > a:hover{
+    color:#8d7429;
+
+}
+
+.How-to-drop-down > li > a > i{
+    display: block;
+    margin-left:2px;
+    margin-bottom:6px;
+    transition: .5s;
+    font-size: 20px;
+}
+
+.How-to-drop-down > li:hover i{
+    transform:translateY(-5px);
+    color:#8d7429;
+}
+
+ 
