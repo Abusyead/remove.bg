@@ -98,6 +98,7 @@ nav{
 
 .How-to-drop-down{
     position: fixed;
+    background-color: #FFFFFF;
     margin-top: 30px;
     list-style: none;
     display: grid;
@@ -109,6 +110,7 @@ nav{
     transform: .5s;
     visibility:hidden;
     opacity:0;
+    z-index: 1000;
 }
 
 ul li:hover .How-to-drop-down{
@@ -144,5 +146,86 @@ ul li:hover .How-to-drop-down{
     transform:translateY(-5px);
     color:#8d7429;
 }
+
+#click{
+    display: none;
+}
+.click-bar{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* responsive navigation code start hare */
+
+@media only screen and (max-width:1280px){
+    .click-bar{
+        display: block;
+    }
+    #click:checked ~ .single-navbar{
+        left: 0;
+    }
+    #click:checked ~ .click-bar i::before{
+        content: '\f00d';
+    }
+    .single-navbar{
+        position: fixed;
+        top: 78px;
+        margin: 0 ;
+        width: 100%;
+        height:100%; 
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: top;
+        justify-content: left;
+        padding: 0px;
+        background-color:#FFFFFF;
+        left: -100%;
+    }
+    .single-navbar > ul{
+        display: flex; 
+        align-items: start;
+        list-style: none;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-right: 60px;
+    }
+
+    .single-navbar > ul > li{
+        margin: 20px 30px ;
+        border-bottom: 4px solid #E3ECDD;
+        padding-bottom: 30px;
+        width: 100%;
+
+    }
+    .log-btn{
+        display: block;
+        margin-left: 12px;
+        margin-bottom: 50px;
+    }
+
+
+    .nav-btn{
+        margin: 0;
+        padding-right: 57px ;
+    }
+    .sign-btn{
+        display:block;
+        width: 100%;
+        margin-left:30px;
+        margin-right: 50px;
+        background-color: #E3ECDD;
+        
+    }
+
+    .How-to-drop-down{
+        /* position:relative; */
+        grid-template-columns: repeat(1,1fr);
+    }
+    nav{
+        justify-content: space-between;
+        padding-right:35px; 
+    }
+} 
 
  
